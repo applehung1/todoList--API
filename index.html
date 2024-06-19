@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--登入頁面-->
+    <div class="login">
+        <div class="container">
+            <div class="left_container">
+                <h2>ONLINE TO DO List</h2>
+                <img src="img/img_1.png" class="img1" alt="待辦圖稿1">
+            </div>
+            <div class="right_container"></div>
+                <div class="form">
+                    <h2>最實用的線上待辦事項服務</h2>
+                    <p>email</p>
+                    <input type="email" name="email" id="email">
+                </div>
+
+        </div>
+    </div>
+
+
+    <!--註冊頁面-->
+
+
+    <!--ToDoList--> 
+    <div class="todo none">    
+        <div class="container">
+            <h1>TODO LIST</h1>
+            <div class="card input">
+            <input type="text" class="txt" placeholder="請輸入待辦事項" >
+            <a href="#" class="btn_add">+</a>
+            </div>
+            <div class="card card_list">
+            <ul class="tab">
+                <li class="tab-link active" data-tab="tab-1">全部</li>
+                <li class="tab-link" data-tab="tab-2">待完成</li>
+                <li class="tab-link" data-tab="tab-3">已完成</li>
+            </ul>
+            <div class="cart_content">
+                <ul class="list">             
+                </ul>
+                <div class="list_footer">
+                <p class="count">5 個待完成項目</p>
+                <a href="#"><p class="clear">清除已完成項目</p></a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="all.js"></Script>
+</body>
+</html>
