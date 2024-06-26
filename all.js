@@ -244,7 +244,7 @@ function signUp(){
         Swal.fire({
             title: "註冊成功!",
             text: "歡迎使用線上待辦清單",
-            imageUrl: "https://sdl-stickershop.line.naver.jp/products/0/0/3/6044/android/stickers/10247750.png;compress=true",
+            imageUrl: "img/img_2.png",
 
             imageAlt: "Custom image"
           });
