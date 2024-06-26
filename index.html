@@ -11,32 +11,80 @@
     <div class="login">
         <div class="container">
             <div class="left_container">
-                <h2>ONLINE TO DO List</h2>
-                <img src="img/img_1.png" class="img1" alt="待辦圖稿1">
+                <div class="title_txt">
+                    <img src="https://www.freeiconspng.com/uploads/rilakkuma-icon-png-12.png" class="icon_img" alt="icon">
+                    <h1>ONLINE TO DO LIST</h1>
+                </div>
+                
+                <img src="img/img_8.png" class="img1" alt="待辦圖稿1">
             </div>
             <div class="right_container"></div>
                 <div class="form">
                     <h2>最實用的線上待辦事項服務</h2>
-                    <p>email</p>
-                    <input type="email" name="email" id="email">
+                    <label for="login_email">Email</label><br>
+                    <input type="email" name="login_email" id="login_email" placeholder="請輸入email"><br>
+                    <p class="error_txt_login"></p>
+                    <label for="login_password">密碼</label><br>
+                    <input type="password" name="login_password" id="login_password" placeholder="請輸入密碼">
+                    <p class="error_txt_login"></p>
+                    <div class="btn_container"><input type="submit" class="loginbtn" id="login_loginbtn" value="登入"></div>
+                    <div class="btn_container"><input type="button" class="signupbtn" id="login_signupbtn" value="註冊帳號"></div>
+
+                </div>
+
+        </div>
+    </div>
+    
+    <!--註冊頁面-->
+    <div class="signup none">
+        <div class="container">
+            <div class="left_container">
+                <div class="title_txt">
+                    <img src="https://www.freeiconspng.com/uploads/rilakkuma-icon-png-12.png" class="icon_img" alt="icon">
+                    <h1>ONLINE TO DO LIST</h1>
+                </div>
+                <img src="https://pnghq.com/wp-content/uploads/pnghq.com-download-transparent-rilakkuma-korilakkuma.png" class="img1" alt="待辦圖稿1">
+            </div>
+            <div class="right_container"></div>
+                <div class="form">
+                    <h2>註冊帳號</h2>
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="signup_email" placeholder="請輸入email"><br>
+                    <p class="error_txt"></p>
+                    <label for="nickname">暱稱</label><br>
+                    <input type="text" name="nickname" id="nickname" placeholder="請輸入您的暱稱"><br>
+                    <p class="error_txt"></p>
+                    <label for="password">密碼</label><br>
+                    <input type="password" name="password" id="signup_password" placeholder="請輸入密碼"><br>
+                    <p class="error_txt"></p>
+                    <label for="password-a">再次輸入密碼</label><br>
+                    <input type="password" name="password-a" id="signup_password-a" placeholder="請再次輸入密碼">
+                    <p class="error_txt"></p>
+                    <div class="btn_container"><input type="submit" class="signupbtn" id="signup_signupbtn" value="註冊帳號"></div>
+                    <div class="btn_container"><input type="button" class="loginbtn" id="signup_loginbtn" value="登入"></div>
                 </div>
 
         </div>
     </div>
 
-
-    <!--註冊頁面-->
-
-
     <!--ToDoList--> 
     <div class="todo none">    
-        <div class="container">
-            <h1>TODO LIST</h1>
-            <div class="card input">
+        <header>
+            <div class="title_txt">
+                <img src="https://www.freeiconspng.com/uploads/rilakkuma-icon-png-12.png" class="icon_img" alt="icon">
+                <h2>ONLINE TODO LIST</h1>
+            </div>
+            <div class="name_group">
+                <p class="name">apple的待辦清單</p>
+                <p class="logout">登出</p>
+            </div>
+
+        </header>
+        <div class="card input">
             <input type="text" class="txt" placeholder="請輸入待辦事項" >
             <a href="#" class="btn_add">+</a>
-            </div>
-            <div class="card card_list">
+        </div>
+        <div class="card card_list none">
             <ul class="tab">
                 <li class="tab-link active" data-tab="tab-1">全部</li>
                 <li class="tab-link" data-tab="tab-2">待完成</li>
@@ -50,11 +98,17 @@
                 <a href="#"><p class="clear">清除已完成項目</p></a>
                 </div>
             </div>
-            </div>
-        </div>
+        </div>    
+        <div class="no_todo none">
+            <p>目前尚無待辦事項</p>
+            <img src="https://www.freeiconspng.com/thumbs/rilakkuma-icon-png/rilakkuma-icon-png-8.png" alt="背景圖">
+        </div>    
     </div>
-    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <script src="all.js"></Script>
 </body>
 </html>
+
+
+<!-- https://pnghq.com/wp-content/uploads/pnghq.com-chiroykogma-and-rilakkuma-bear-eating-honey-transparent-png.png -->

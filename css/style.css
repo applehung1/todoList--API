@@ -3,45 +3,198 @@
 * {
   box-sizing: border-box;
 }
-*{outline: 1px solid #000;}
+
+/* *{outline: 1px solid #000;} */
+
 html {
   font-size: 16px;
   -webkit-tap-highlight-color: transparent;
 }
-
+*{
+    font-family: "Baloo Tamma 2";
+}
 body {
   min-height: 100vh;
-  background: #eee;
+  background: #D5B850;
   display: flex;
   color: #333333;
-  background-image: linear-gradient(174deg, #83A8C1 2%, #83A8C1 46%, #ffffff 46%, #ffffff 100%, #e8e8e8 100%);
+
   letter-spacing: 0.07em;
 }
 /* login */
 .login{
     margin: auto;
+
 }
 .login .container{
     display: flex;
 }
+.title_txt{
+    display: flex;
+}
+.icon_img{
+    width: 30px;
+    height: 30px;
+    margin-top: 35px;
+}
+h1{
+    color: #824C0C;
+    font-weight: bold;
+    font-size: 36px;
+}
 .img1{
     width: 400px;
 }
+
+.left_container{
+    padding: 40px;
+}
 .right_container .h2{
-    white-space: nowrap;
+    white-space: nowrap;    
+}
+.form{
+    padding-top: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#login_email, #login_password,#nickname,#signup_password-a,#signup_password,#signup_email{
+    border-radius: 5px;
+    font-weight: bold;
+    height: 45px;
+    width: 300px;
+    margin-bottom: 20px;
+    border:none;
+}
+label{
+    font-weight: bold;
+    font-size: 14px;
+
+}
+.form span{
+    color: #D26900;
+    font-size: 12px;
+    font-weight: bold;
+}
+.form p{
+    color: #D26900;
+    font-size: 12px;
+}
+.login .form .loginbtn{
+    width: 140px;
+    height: 40px;
+    background-color: #956D14;
+    color: #fff;
+    border-radius: 5px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-top: 20px;
+    border: none;
+}
+
+.login .form .loginbtn:hover{
+    width: 140px;
+    height: 40px;
+    background-color: #A57815;
+    color: #fff;
+    border-radius: 5px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.login .form .signupbtn{
+    background-color:transparent;
+    color: #956D14;
+    border: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.login .form .signupbtn:hover{
+    background-color:transparent;
+    color: #B9840E;
+    border: none;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* signup */
+.signup{
+    margin: auto;
+
+}
+.signup .container{
+    display: flex;
+}
+.signup #nickname, .signup #signup_email, .signup #signup_password,.signup #signup_password-a{
+    margin-top: 0px;
+    margin-bottom:0px;
+}
+.signup .form{
+    padding-top: 0px;
+}
+.btn_container{
+    display: flex;
+    justify-content: center;
+
+}
+.signup .form .signupbtn{
+    width: 140px;
+    height: 40px;
+    background-color: #956D14;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: none;
+}
+
+.signup .form .signupbtn:hover{
+    width: 140px;
+    height: 40px;
+    background-color: #A57815;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+}
+.signup .form .loginbtn{
+    background-color: transparent;
+    color: #956D14;
+    border: none;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 
+.signup .form .loginbtn:hover{
+    background-color: transparent;
+    color: #B9840E;
+    border: none;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+}
 
 /* toDoList */
-h1 {
-  text-align: center;
-  font-size: 3rem;
-  margin-bottom: 1.5rem;
-  font-family: "Baloo Tamma 2";
-  letter-spacing: 0.5rem;
-  font-weight: bold;
+.todo .icon_img{
+    width: 30px;
+    height: 30px;
+    margin-top: 25px;
 }
+.todo .icon_img:hover{
+    cursor: pointer;
+}
+.todo h2 {
+  font-weight: bold;
+  color: #824C0C;
+}
+.todo h2{
+    cursor: pointer;
+}
+
 @media (max-width: 575px) {
   h1 {
     font-size: 2rem;
@@ -49,28 +202,49 @@ h1 {
   }
 }
 
-
-
-
-
 .todo{
-    margin: 3rem auto 1.5rem auto;
+
+    background-image: linear-gradient(174deg, #D5B850 50%, #FFF2F4 50%);
+
+    width: 100%;
 }
-.todo .container {
-  margin: 3rem auto 1.5rem auto;
-  padding: 0 12px;
-  width: 500px;
-}
+
 @media (max-width: 575px) {
   .container {
     margin-top: 1.5rem;
   }
 }
+.todo header{
+    display: flex;
+    justify-content: space-between;
+}
+.todo .name_group{
+    display: flex;
+}
 
+.name_group p{
+    padding: 2px;
+    padding-top: 20px;
+}
+
+.name{
+    color: #7B450C;
+    font-weight: bold;
+}
+.logout{
+    color: #7B450C;
+    font-weight: bold;
+}
+.logout:hover{
+    color: #efefef;
+    cursor: pointer;
+}
 .card {
   margin-bottom: 0.5rem;
-  max-width: 100%;
-  padding: 1rem;
+  max-width: 575px; 
+  min-width: 300px;
+  margin-left: 35%;
+  margin-right: 35%;
   border-radius: 10px;
   background: #fff;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
@@ -104,12 +278,24 @@ input[type=text]::placeholder {
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  background: #333333;
+  background: #7B5909;
   color: #fff;
   font-size: 2rem;
   text-decoration: none;
 }
-
+.btn_add:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: #8F670A;
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+  }
 .card_list {
   padding: 0;
 }
@@ -270,8 +456,11 @@ input[type=text]::placeholder {
   list-style-type: none;
   cursor: pointer;
 }
+.no_todo{
+    text-align: center;
+}
 
-
+/* 頁面切換 */
 .none{
     display: none;
 }
